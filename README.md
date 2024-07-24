@@ -39,7 +39,7 @@ init.initByWeightRescaling(model, img_size, verbose=verbose) #img_size=size of r
 ```
 from counterfactual import activation_opti
 
-alpha = activation_opti(model, features, mono=True)
+alpha = activation_opti(model, features, mono=True) #model=trained model, features=initial interpretable features for which we search the counterfactual difference, mono=impose non-negative alpha
 ```
 
 **Examples of args**

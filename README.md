@@ -35,6 +35,13 @@ import init
 init.initByWeightRescaling(model, img_size, verbose=verbose) #img_size=size of random noise used for init, verbose=print mean, var, corr
 ```
 
+**Counterfactual example**
+```
+from counterfactual import activation_opti
+
+alpha = activation_opti(model, features)
+```
+
 **Examples of args**
 
 --moe=1/CN/8/1/c8_7/c8_3_1_inorm : monotonic networks with encoder Conv kernel=7, filters=8, instance norm +  Conv kernel=3, filters=8, instance norm
